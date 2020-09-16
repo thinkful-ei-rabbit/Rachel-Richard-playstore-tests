@@ -33,7 +33,7 @@ app.get('/apps', (req, res) => {
     });
   }
 
-  if (!categories.includes(genres)) {
+  if (genres && !categories.includes(genres)) {
     return res.status(400).send({ message: 'Genre does not exist.' });
   }
 
@@ -54,3 +54,6 @@ function jsUcfirst(string) {
   string = string.toLowerCase();
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+
+module.exports = app;
