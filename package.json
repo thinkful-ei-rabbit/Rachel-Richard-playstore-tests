@@ -1,0 +1,26 @@
+{
+  "name": "intro-to-node-and-cpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "play": "clake",
+    "start": "node index.js",
+    "dev": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk-animation": "^1.6.0",
+    "clake": "^1.0.1",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "moment": "^2.28.0",
+    "morgan": "^1.10.0",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
