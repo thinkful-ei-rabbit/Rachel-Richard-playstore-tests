@@ -33,7 +33,7 @@ app.get('/apps', (req, res) => {
     });
   }
 
-  if (!categories.includes(genres)) {
+  if (genres && !categories.includes(genres)) {
     return res.status(400).send({ message: 'Genre does not exist.' });
   }
 
